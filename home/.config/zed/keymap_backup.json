@@ -1,0 +1,49 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+// [
+//   {
+//     "context": "Workspace",
+//     "bindings": {
+//       // "shift shift": "file_finder::Toggle"
+//     },
+//   },
+//   {
+//     "context": "Editor && vim_mode == insert",
+//     "bindings": {
+//       // "j k": "vim::NormalBefore"
+//     },
+//   },
+// ]
+
+[
+	{
+		"bindings": {
+			"ctrl-tab": "pane::ActivateNextItem",
+			"ctrl-shift-tab": "pane::ActivatePrevItem",
+			"ctrl-=": "pane::GoForward",
+			"ctrl--": "pane::GoBack",
+			"ctrl-shift-=": "zed::IncreaseBufferFontSize",
+			"ctrl-shift--": "zed::DecreaseBufferFontSize",
+			"ctrl-,": "zed::OpenSettings",
+			"ctrl-k ctrl-s": "zed::OpenKeymap",
+		},
+	},
+	{
+		"context": "Terminal",
+		"bindings": {
+			"ctrl-tab": "pane::ActivateNextItem",
+			"ctrl-shift-tab": "pane::ActivatePrevItem",
+		},
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-'": "editor::ShowInlineCompletion",
+		},
+	},
+]

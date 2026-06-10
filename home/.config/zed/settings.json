@@ -1,0 +1,110 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+    "title_bar": {
+        "show": "never",
+    },
+    "cli_default_open_behavior": "existing_window",
+    "icon_theme": "Material Icon Theme",
+    "project_panel": {
+        "dock": "left",
+    },
+    "outline_panel": {
+        "dock": "left",
+    },
+    "collaboration_panel": {
+        "dock": "left",
+    },
+    "agent": {
+        "default_model": {
+            "provider": "openai-subscribed",
+            "model": "gpt-5.5",
+            "enable_thinking": true,
+            "effort": "medium",
+        },
+        "dock": "right",
+        "favorite_models": [],
+        "model_parameters": [],
+    },
+    "git_panel": {
+        "dock": "left",
+    },
+    "vim_mode": false,
+    "terminal": {
+        "max_scroll_history_lines": 50000,
+        // "shell": {
+        //     "program": "kitty",
+        // },
+    },
+    "telemetry": {
+        "diagnostics": false,
+        "metrics": false,
+    },
+    "base_keymap": "VSCode",
+    "status_bar": {
+        "experimental.show": false,
+    },
+    "tab_bar": {
+        "show_tab_bar_buttons": false,
+    },
+    "vertical_scroll_margin": 999.0,
+    "minimap": {
+        "show": "never",
+        "thumb": "always",
+        "max_width_columns": 80,
+    },
+    "cursor_shape": "bar",
+    "max_tabs": 10,
+    "autosave": {
+        "after_delay": {
+            "milliseconds": 10,
+        },
+    },
+    "buffer_font_family": "JetBrainsMonoNL Nerd Font Mono",
+    "ensure_final_newline_on_save": true,
+    "preferred_line_length": 120,
+    "soft_wrap": "bounded",
+    "hard_tabs": false,
+    "tab_size": 4,
+    "ui_font_size": 20.0,
+    "buffer_font_size": 20.0,
+    "theme": {
+        "mode": "system",
+        "light": "One Light",
+        "dark": "VSCode Dark Modern",
+    },
+    "toolbar": {
+        "breadcrumbs": false,
+        "quick_actions": false,
+    },
+
+    "languages": {
+        "Python": {
+            "language_servers": ["pyright"],
+            "format_on_save": "on",
+            "formatter": {
+                "external": {
+                    "command": "black",
+                    "arguments": ["--stdin-filename", "{buffer_path}", "-"],
+                },
+            },
+        },
+    },
+    "lsp": {
+        "pyright": {
+            "settings": {
+                "python": {
+                    "analysis": {
+                        "typeCheckingMode": "off",
+                    },
+                },
+            },
+        },
+    },
+}

@@ -1,0 +1,72 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+// [
+//   {
+//     "context": "Workspace",
+//     "bindings": {
+//       // "shift shift": "file_finder::Toggle"
+//     },
+//   },
+//   {
+//     "context": "Editor && vim_mode == insert",
+//     "bindings": {
+//       // "j k": "vim::NormalBefore"
+//     },
+//   },
+// ]
+
+[
+    {
+        "context": "Editor",
+        "bindings": {
+            "alt-z": "editor::ToggleSoftWrap",
+        },
+    },
+    {
+        "context": "Workspace",
+        "bindings": {
+            "ctrl-p": "file_finder::Toggle",
+        },
+    },
+    {
+        "bindings": {
+            "ctrl-tab": "pane::ActivateNextItem",
+            "ctrl-shift-tab": "pane::ActivatePreviousItem",
+            "ctrl-=": "pane::GoForward",
+            "ctrl--": "pane::GoBack",
+            "ctrl-shift-=": "zed::IncreaseBufferFontSize",
+            "ctrl-shift--": "zed::DecreaseBufferFontSize",
+            "ctrl-,": "zed::OpenSettingsFile",
+            "ctrl-k ctrl-s": "zed::OpenKeymap",
+        },
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            "ctrl-tab": "pane::ActivateNextItem",
+            "ctrl-shift-tab": "pane::ActivatePreviousItem",
+        },
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-'": "editor::ShowEditPrediction",
+        },
+    },
+    {
+        "context": "ProjectPanel",
+        "bindings": {
+            "ctrl-down": "project_panel::OpenPermanent",
+        },
+    },
+    {
+        "bindings": {
+            "ctrl-shift-e": "project_panel::ToggleFocus",
+        },
+    },
+]
